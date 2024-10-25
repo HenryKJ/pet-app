@@ -2,21 +2,17 @@
 
 namespace App\Providers;
 
+use App\Interfaces\PetServiceInterface;
+use App\Services\DogService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
-        //
+        $this->app->bind(PetServiceInterface::class, DogService::class);
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
         //

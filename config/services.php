@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'dog_api' => [
+        'url' => env('DOG_API_URL'),
+        'key' => env('DOG_API_KEY'),
+    ],
 ];

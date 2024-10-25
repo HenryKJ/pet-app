@@ -136,3 +136,38 @@ input.dark-mode::placeholder {
     border-color: var(--accent-color) !important;
     box-shadow: 0 0 0 .25rem rgba(0, 173, 181, .25) !important;
 }
+
+.interactive-card {
+    background-color: var(--secondary-bg-color-light);
+    border-color: var(--accent-color);
+    color: var(--text-color-light);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.interactive-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#breed-grid {
+    width: 100%;
+}
+
+.breed-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    #breed-grid {
+        width: 75%;
+    }
+
+    .breed-image {
+        width: 50%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
